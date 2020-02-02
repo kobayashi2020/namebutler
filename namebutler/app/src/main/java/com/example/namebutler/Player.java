@@ -40,9 +40,9 @@ public class Player {
      * コンストラクタ
      * @param name : プレイヤー名
      */
-    public Player(String name,int job) {
+    public Player(String name) {
         this.name = name;
-        this.job = job;
+        //this.job = job;
         // キャラクターのパラメータ生成
         MakeCharacter(job);
     }
