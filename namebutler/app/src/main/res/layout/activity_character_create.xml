@@ -1,7 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:orientation="vertical">
     <!-- キャラクター作成画面 -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="名前を入力してください"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/name_input_text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layout"
+        android:text="入力"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="職業を選択してください"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/profession_grp"
+        android:layout_width="match_parent"
+        android:layout_height="211dp">
+
+        <RadioButton
+            android:id="@+id/fighter_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="戦士"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/wizard_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="魔法使い"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/priest_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="僧侶"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/beast_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="獣使い"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/chara_create_btn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="作成する"
+        android:textSize="25sp" />
 
 </LinearLayout>

@@ -18,8 +18,8 @@ public class GameManager  extends Player {
     // =======================
     // コンストラクタ
     // =======================
-    public GameManager(String name,int job){
-        super(name,job);
+    public GameManager(String name,int i){
+        super(name);
     }
 
     // =======================

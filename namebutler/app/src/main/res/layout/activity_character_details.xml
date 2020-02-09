@@ -4,4 +4,10 @@
     android:layout_height="match_parent">
     <!-- キャラクター一覧画面 -->
 
+    <Button
+        android:id="@+id/create_new_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="新しく作成する" />
 </LinearLayout>
