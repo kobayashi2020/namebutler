@@ -20,12 +20,35 @@
         </activity>
 
         <activity
-        android:name=".CharacterCreateActivity"
-        android:label="キャラ作成" >
-        </activity>
-
-        <activity
             android:name=".CharacterDetailsActivity"
+            android:label="キャラ作成" >
+        </activity>
+        <activity
+            android:name=".CharacterMakeActivity"
+            android:label="キャラ作成" >
+        </activity>
+        <activity
+            android:name=".CharacterCreateActivity"
+            android:label="キャラ作成" >
+        </activity>
+        <activity
+            android:name=".CharacterCreateDoneActivity"
+            android:label="キャラ作成" >
+        </activity>
+        <activity
+            android:name=".PartyActivity"
+            android:label="キャラ作成" >
+        </activity>
+        <activity
+            android:name=".BattleActivity"
+            android:label="キャラ作成" >
+        </activity>
+        <activity
+            android:name=".StrategyActivity"
+            android:label="キャラ作成" >
+        </activity>
+        <activity
+            android:name=".BattleResultActivity"
             android:label="キャラ作成" >
         </activity>
     </application>

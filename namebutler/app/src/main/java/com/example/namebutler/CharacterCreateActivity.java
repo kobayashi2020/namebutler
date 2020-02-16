@@ -18,6 +18,7 @@ public class CharacterCreateActivity extends Activity {
         // 入力された文字を取得
         EditText editText = (EditText) findViewById(R.id.name_input_text);
         String nameInputText = editText.getText().toString();
+        //最大文字数チェック
 
         RadioButton fighterBtn = findViewById(R.id.fighter_btn);
         RadioButton wizardBtn = findViewById(R.id.wizard_btn);
@@ -38,19 +39,23 @@ public class CharacterCreateActivity extends Activity {
         }else if(radioButton == beastBtn){
             //獣使い
         }
+        //職業の一覧を表示
+        //取得したデータ数に応じてリストの要素数を動的に変更
 
-        //職業リストをボタンに設定
+        //一覧から「職業」を一つ選択
 
-        //作成するボタンを押下する
-        //キャラ一覧押下で、画面遷移　character_list_btn
+
+
+        //作成するボタン
         Button charaCreateBtn = findViewById(R.id.chara_create_btn);
-        // ボタンに OnClickListener インターフェースを実装する
         charaCreateBtn.setOnClickListener(new View.OnClickListener() {
-            // クリック時に呼ばれるメソッド
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.activity_top);
-                //キャラクター一覧
+                //「職業」に応じた「パラメータ」の自動生成
+
+                //〔キャラクターテーブル〕にデータを追加
+
+                //【キャラクター作成完了画面】に遷移
                 Intent intent = new Intent(CharacterCreateActivity.this, CharacterCreateDoneActivity.class);
                 startActivity(intent);
             }

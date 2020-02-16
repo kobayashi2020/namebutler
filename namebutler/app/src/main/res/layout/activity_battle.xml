@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <!-- バトルメイン画面 -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +15,7 @@
         android:paddingRight="15dp">
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/enemy_members1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -21,7 +23,7 @@
             android:text="敵メンバー1" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/enemy_members2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -29,7 +31,7 @@
             android:text="敵メンバー2" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/enemy_members3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -46,7 +48,7 @@
         android:paddingRight="15dp">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/ally_members1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -54,7 +56,7 @@
             android:text="仲間メンバー1" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/ally_members2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -62,7 +64,7 @@
             android:text="仲間メンバー2" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/ally_members3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -70,32 +72,52 @@
             android:text="仲間メンバー3" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        app:srcCompat="@drawable/ic_launcher_background" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="390dp"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="作戦："
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/Create_name"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_weight="3"
+            android:text="作戦名"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/challenging_again_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="再挑戦" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/battle_log"
+        android:layout_width="380dp"
+        android:layout_height="265dp"
         android:layout_gravity="center_horizontal"
-        android:text="再挑戦" />
+        android:background="@drawable/layout"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="バトルログ" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/battle_exit_btn"
         android:layout_width="390dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:paddingTop="15dp"
-        android:text="次の対戦へ" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="390dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="15dp"
-        android:text="対戦を終了する" />
+        android:text="次のターン" />
 </LinearLayout>

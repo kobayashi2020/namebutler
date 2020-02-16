@@ -7,7 +7,6 @@
     <!-- キャラクター作成画面 -->
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="名前を入力してください"
@@ -23,7 +22,6 @@
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -72,5 +70,4 @@
         android:layout_marginTop="15dp"
         android:text="作成する"
         android:textSize="25sp" />
-
 </LinearLayout>

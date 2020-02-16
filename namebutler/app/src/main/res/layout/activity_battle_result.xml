@@ -1,7 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <!-- バトル結果画面 -->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/enemy_members1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout"
+            android:text="敵メンバー1" />
+
+        <TextView
+            android:id="@+id/enemy_members2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout"
+            android:text="敵メンバー2" />
+
+        <TextView
+            android:id="@+id/enemy_members3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout"
+            android:text="敵メンバー3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/ally_members1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout"
+            android:text="仲間メンバー1" />
+
+        <TextView
+            android:id="@+id/ally_members2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout"
+            android:text="仲間メンバー2" />
+
+        <TextView
+            android:id="@+id/ally_members3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout"
+            android:text="仲間メンバー3" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/challenging_again_btn"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="再挑戦" />
+
+    <Button
+        android:id="@+id/battle_next_btn"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:text="次の対戦へ" />
+
+    <Button
+        android:id="@+id/Battle_exit_btn"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:text="対戦を終了する" />
 </LinearLayout>
