@@ -21,11 +21,11 @@
 
         <activity
             android:name=".CharacterDetailsActivity"
-            android:label="キャラ作成" >
+            android:label="キャラ一覧(何人)" >
         </activity>
         <activity
             android:name=".CharacterMakeActivity"
-            android:label="キャラ作成" >
+            android:label="キャラ詳細" >
         </activity>
         <activity
             android:name=".CharacterCreateActivity"
@@ -40,16 +40,20 @@
             android:label="キャラ作成" >
         </activity>
         <activity
+            android:name=".BattleStartActivity"
+            android:label="バトル開始" >
+        </activity>
+        <activity
             android:name=".BattleActivity"
-            android:label="キャラ作成" >
+            android:label="バトル" >
         </activity>
         <activity
             android:name=".StrategyActivity"
-            android:label="キャラ作成" >
+            android:label="作戦" >
         </activity>
         <activity
             android:name=".BattleResultActivity"
-            android:label="キャラ作成" >
+            android:label="バトル結果" >
         </activity>
     </application>
 </manifest>
