@@ -31,7 +31,8 @@
     <RadioGroup
         android:id="@+id/profession_grp"
         android:layout_width="match_parent"
-        android:layout_height="211dp">
+        android:layout_height="211dp"
+        android:layout_marginTop="15dp">
 
         <RadioButton
             android:id="@+id/fighter_btn"

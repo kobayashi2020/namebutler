@@ -1,6 +1,9 @@
 package com.example.namebutler;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class NameBattler {
@@ -40,6 +43,26 @@ public class NameBattler {
     static String playerName6;
 
     static Party party = new Party();
+    /*
+     *ステータスの取得SQL登録
+     * name    : ユーザー名
+     * jobName : 職業名
+     * job     : 職業番号
+     */
+    public static void UseStatus(String userName,int job){
+
+        Player player = new GameManager(userName,job);
+        //TODO 仮〔キャラクターテーブル〕にデータを追加
+        SqlRegister sqlRegister = new SqlRegister();
+        //現在の時間(YYYY/MM/DD HH:MM)
+        Date date = new Date(); // 今日の日付
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:MM");
+        String create_at = dateFormat.format(date);
+
+        // SQLにデータ登録
+        sqlRegister.insertDB(userName,job,player.hp, player.mp,  player.str,  player.def,
+                player.agi,  player.luck,  create_at);
+    }
 
     public static void main(String[] args) throws InterruptedException {
         // ==================================================
@@ -55,7 +78,7 @@ public class NameBattler {
             playerName4 ="name4";
             playerName5 ="name5";
             playerName6 ="name6";
-            //プレイヤー設定
+            //プレイヤーのステータス設定
             player1 = new GameManager(playerName1,4);//1.剣士
             player2 = new GameManager(playerName2,4);//3.僧侶
             player3 = new GameManager(playerName3,4);//3.僧侶

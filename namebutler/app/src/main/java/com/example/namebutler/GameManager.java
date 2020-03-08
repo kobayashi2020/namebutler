@@ -9,7 +9,7 @@ public class GameManager  extends Player {
     protected int fighter = 0;    // 戦士
     protected int wizard = 1;     // 魔法使い
     protected int priest = 2;     // 僧侶
-    protected int beastmaster= 3; // 獣使い
+    protected int beastMaster= 3; // 獣使い
     protected int job;
     static int parizeFlag = 0;
     static Boolean poisonFlag = false;
@@ -20,6 +20,7 @@ public class GameManager  extends Player {
     // =======================
     public GameManager(String name,int i){
         super(name);
+        MakeCharacter(i);
     }
 
     // =======================

@@ -13,7 +13,29 @@ public class BattleActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battle);
 
-        //この相手と戦う
+        //敵メンバー1
+        TextView enemyMembers1 = findViewById(R.id.enemy_members1);
+
+        //敵メンバー2
+        TextView enemyMembers2 = findViewById(R.id.enemy_members2);
+
+        //敵メンバー3
+        TextView enemyMembers3 = findViewById(R.id.enemy_members3);
+
+        //仲間メンバー1
+        TextView allyMembers1 = findViewById(R.id.ally_members1);
+
+        //仲間メンバー2
+        TextView allyMembers2 = findViewById(R.id.ally_members2);
+
+        //仲間メンバー3
+        TextView allyMembers3 = findViewById(R.id.ally_members3);
+
+
+        //作戦名create_name
+        TextView createName = findViewById(R.id.create_name);
+        createName.setText("TODO 作戦名を取得して貼り付け");
+
         Button battleStartBtn = findViewById(R.id.battle_start_btn);
         battleStartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,21 +47,31 @@ public class BattleActivity extends Activity {
             }
         });
 
-        //バトルログエリア(「バトルログ」を表示)
-        TextView battleLog = findViewById(R.id.battle_log);
-        battleLog.setText("ここに表示");
-
         //［次のターン］ボタン
         Button battleExitBtn = findViewById(R.id.battle_exit_btn);
-        battleStartBtn.setOnClickListener(new View.OnClickListener() {
+        //ログに出す文字列取得
+        String log ="";
+
+        //バトルログを出す
+        TextView battleLog = findViewById(R.id.battle_log);
+        battleLog.setText(log = log + "ログ");
+
+        //［次のターン］ボタン押下
+        battleExitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setContentView(R.layout.activity_top);
-                //１ターン分、「戦闘」を進める
+                //ターンが20ターン立ったら終了
+                //敵または味方が全員死んだら終わり
+                if("死んだ" == "死んだ"|| "ターン" == "20" ){
+                    //【バトル結果画面】に遷移
+                    Intent intent = new Intent(BattleActivity.this, BattleResultActivity.class);
+                    intent.putExtra("","");
+                    startActivity(intent);
+                }else {
+                    //１ターン分、「戦闘」を進める
 
-                //「バトルログ」の更新
-
-                //勝敗判定チェック
+                }
             }
         });
     }
