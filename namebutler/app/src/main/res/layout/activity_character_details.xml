@@ -1,25 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <!-- キャラクター一覧画面 -->
 
-    <RadioGroup
+    <!-- キャラクター名分スクロール-->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="548dp">
+        android:layout_height="500dp">
 
-        <RadioButton
-            android:id="@+id/radio_setting_btn"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:text="名前" />
-    </RadioGroup>
+        <!-- キャラクターリスト -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- キャラクター一覧画面 -->
+            <Button
+                android:id="@+id/character_list_btn"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="名前" />
+
+            <Button
+                android:id="@+id/setting_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/setting_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/setting_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="" />
+
+            <Button
+                android:id="@+id/setting_btn5"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="" />
+
+            <Button
+                android:id="@+id/setting_btn6"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="" />
+
+            <Button
+                android:id="@+id/setting_btn7"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="" />
+
+            <Button
+                android:id="@+id/setting_btn8"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="" />
+
+            <Button
+                android:id="@+id/setting_btn9"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="" />
+
+            <Button
+                android:id="@+id/setting_btn10"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/clear_button_bg"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/create_new_btn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="73dp"
         android:text="新しく作成する"
         android:textSize="20dp" />
-
 </LinearLayout>
